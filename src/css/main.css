@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background-color: #58aebb;
+}
+
+.image-bg {
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 80%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  margin-top: 1rem;
+}
+.container .desheading {
+  font-style: italic;
+  text-align: center;
+}
+.container h1 {
+  letter-spacing: 3px;
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, rgb(16, 16, 16) 50%, #58fffc 50%, #2eaccc);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+.container h1:hover {
+  background-position: -100%;
+}
+
+.container p {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.cakeContainer {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.classImg {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+.classImgBorder {
+  border: 2px solid rgb(0, 195, 255);
+  border-radius: 12px;
+  filter: grayscale(0);
+}
+
+.desInfo {
+  margin: -1rem auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.desInfo h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(84, 84, 84);
+}
+.desInfo img {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 10rem;
+  filter: grayscale(0);
+  border-radius: 50%;
+}
+.desInfo p {
+  padding: 1rem;
+  width: 95%;
+  font-size: 1.2rem;
+  color: rgb(29, 29, 29);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .desInfo {
+    width: 90%;
+  }
+  .desInfo p {
+    width: 100%;
+    padding: 0;
+  }
+  .desInfo img {
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+  }
+  .desInfo p {
+    font-size: 0.9rem;
+  }
+  .classImg {
+    width: 4rem;
+    height: 4rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
