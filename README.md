@@ -15,3 +15,6 @@ React JS e Sass.
 
 ### Desafios:
 Meu maior desafio foi estruturar os objetos dentro de um componente e acessa-los, após importar, de modo que eu conseguisse retornar uma informação de cada vez, utilizando o formato de "tabs" para manipular os dados acessados deste componente.
+
+### Visite agora:
+<a href="https://terremostra.netlify.app/">https://terremostra.netlify.app/
